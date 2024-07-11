@@ -26,9 +26,6 @@ body{
     justify-content: space-around;
     align-items:center;
 }
-#header{
-    position: relative;
-}
 #marq-link{
     color:var(--light);
     text-decoration: none;
@@ -38,12 +35,17 @@ body{
     padding:10px 50px;
 }
 .header-div{
-    margin-top:20px;
+    margin-top:15px;
     /* border:1px solid red; */
     position:sticky;
     top:0px;
     height:100px;
     width:100%;
+    background-color: var(--light);
+    z-index: 2;
+}
+.margin-0{
+    margin-top:0px;
 }
 .nav{
     list-style-type: none;
@@ -224,6 +226,37 @@ body{
 }
 .trusted-para{
     opacity:85%;
+}
+.go-up{
+    position: absolute;
+    bottom:20px;
+    right:20px;
+    padding:10px;
+    display:flex;
+    height:35px;
+    width:35px;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border:none;
+    background-color: var(--color1);
+    color:var(--light);
+    cursor:pointer;
+    a{
+        color:var(--light);
+    }
+}
+.go-up:hover{
+    background-color: var(--light);
+    border:1px solid var(--color1);
+    i{
+        color:var(--color1);
+    }
+}
+.sticky{
+    position:fixed;
+    bottom:10px;
 }
 .about-container .learn-more:hover{
     background-color: #032711;
