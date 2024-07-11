@@ -6,7 +6,6 @@ for(let i=update;i<=value;i+=update){
     count[id].textContent = i+add;
     await sleep(sleepTime);
 }
-console.log('loop terminated');
 }
 increment(0,89052,52,60);
 increment(1,12199,199,500);

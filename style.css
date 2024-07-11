@@ -26,6 +26,12 @@ body{
     justify-content: space-around;
     align-items:center;
 }
+.flex-center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #marq-link{
     color:var(--light);
     text-decoration: none;
@@ -324,12 +330,15 @@ body{
     a{
         color:var(--dark);
     }
+    a:hover{
+        color:var(--color1);
+    }
 }
 .notice-item:hover{
     scale:1.01;
     box-shadow: 1px 1px 4px var(--color1), -1px -1px 4px var(--color1);
 }
-#event-section{
+#event-section, #news-section{
     img{
         width:100%;
         margin:auto;
@@ -337,7 +346,7 @@ body{
         border-top-left-radius: 1rem;
     }
 }
-.event-head{
+.event-head, .news-head{
     text-align:center;
     font-size:20px;
     position:relative;
@@ -348,7 +357,7 @@ body{
         color:var(--primary);
     }
 }
-.events{
+.events, .news{
     border-top:7px solid var(--primary);
     margin:20px 60px;
     box-shadow:1px 1px 4px var(--dark), -1px -1px 4px var(--dark);
@@ -375,6 +384,83 @@ body{
     }
 }
 .event-img{
+    overflow: hidden;
+
+}
+.event-details, .event-date, .event-location{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap:20px;
+    i{
+        border-radius: 50%;
+        background-color: var(--primary);
+        padding:20px;
+        color: var(--light);
+    }
+}
+.event-details{
+    padding-left:10px;
+    border-top:1px solid var(--primary-dark);
+}
+.date, .location{
+    h4{
+        margin-bottom:0;
+    }
+    p{
+        margin-top:0;
+        font-family: "Roboto", serif;
+        font-size: 15px;
+    }
+}
+.date{
+    padding-right:10px;
+}
+.event-date{
+    border-right:1px solid var(--primary-dark);
+}
+#donate-section{
+    background-image: url(Images/donatebg1.png);
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.content{
+    text-align: center;
+    margin:100px auto;
+    h1{
+        margin-bottom: 50px;
+        color:var(--light);
+    }
+}
+#donate2:hover{
+    background-color: var(--color1);
+    color:var(--light);
+    border:none;
+}
+.partner-head{
+    text-align:center;
+    font-size:20px;
+}
+.partner-logo{
+    gap:50px;
+    img{
+        width:10%;
+    }
+}
+.news-grid{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    gap:0px;
+    margin:auto;
+}
+.news-item{
+    border:1px solid var(--dark);
+    text-align: center;
+    width:300px;
+    border-radius: 1rem;
     overflow: hidden;
 }
 @media only screen and (max-width:820px){
